@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minhas Reservas</title>
+
+<body class="reservas-page">
+
+<link rel="stylesheet" href="css/style.css">
+
+<div class="container">
+  <h1>Minhas Reservas</h1>
+</div>
+
+</body>
+
+<header>
+  <div class="logo">🏐 GameMatch</div>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Quadras</a>
+    <a href="#">Jogadores</a>
+    <a href="#" class="active">Minhas reservas</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h1>Minhas Reservas</h1>
+  <div class="subtitle">Gerencie suas reservas de quadras</div>
+
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('proximas')">Próximas (2)</div>
+    <div class="tab" onclick="showTab('historico')">Histórico (1)</div>
+  </div>
+
+  <!-- PROXIMAS -->
+  <div id="proximas">
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <span class="card-title">Quadra Central</span>
+          <span class="badge">Confirmada</span>
+        </div>
+        <div class="price">R$ 150</div>
+      </div>
+
+      <div class="card-info">Futebol</div>
+      <div class="card-info">📅 20 Abril de 2026 | ⏰ 18:00</div>
+      <div class="card-info">📍 Centro - Anápolis</div>
+
+      <div class="divider"></div>
+      <button class="btn" onclick="cancelar(this)">🗑 Cancelar Reserva</button>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <span class="card-title">Quadra Olímpia</span>
+          <span class="badge">Confirmada</span>
+        </div>
+        <div class="price">R$ 120</div>
+      </div>
+
+      <div class="card-info">Basquete</div>
+      <div class="card-info">📅 22 Abril de 2026 | ⏰ 20:00</div>
+      <div class="card-info">📍 Jaira - Anápolis</div>
+
+      <div class="divider"></div>
+      <button class="btn" onclick="cancelar(this)">🗑 Cancelar Reserva</button>
+    </div>
+  </div>
+
+  <!-- HISTORICO -->
+  <div id="historico" style="display:none;">
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <span class="card-title">Quadra Antiga</span>
+        </div>
+        <div class="price">R$ 100</div>
+      </div>
+
+      <div class="card-info">Futebol</div>
+      <div class="card-info">📅 10 Abril de 2026 | ⏰ 16:00</div>
+      <div class="card-info">📍 Centro - Anápolis</div>
+    </div>
+  </div>
+</div>
